@@ -3,7 +3,7 @@
         <h1>{{title}}</h1>
     </header>
     <Button 
-        @toggle-add-task="$emit('toggle-add-task')" 
+        @btn-click="$emit('toggle-add-task')" 
         :text="showAddTask ? 'Close' : 'Add Task'" 
         color="Green"
     />
