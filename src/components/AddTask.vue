@@ -1,5 +1,5 @@
 <template>
-    <form @submit="onSubmit()" class="add-form">
+    <form @submit="onSubmit" class="add-form">
         <div class="form-control">
             <label>Task</label>
             <input 
@@ -50,7 +50,7 @@
                 }
 
                 const newTask = {
-                    id: Math.floor(Math.random() * 100000),
+                    // id: Math.floor(Math.random() * 100000),
                     text: this.text,
                     day: this.day,
                     reminder: this.reminder
